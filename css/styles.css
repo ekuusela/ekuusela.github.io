@@ -1,0 +1,69 @@
+@keyframes anim0 {
+  from { transform: perspective( 800px ) rotate3d( 0, 1, 0, -5deg ) translate3d( 0, 0, 0px ); }
+  to {   transform: perspective( 800px ) rotate3d( 0, 1, 0, 5deg ) translate3d( 0, 0, 0px );  }
+}
+@keyframes anim1 {
+  from { transform: perspective( 800px ) rotate3d( 0, 1, 0, -5deg ) translate3d( 0, 0, 50px ); }
+  to {   transform: perspective( 800px ) rotate3d( 0, 1, 0, 5deg ) translate3d( 0, 0, 50px );  }
+}
+@keyframes anim2 {
+  from { transform: perspective( 800px ) rotate3d( 0, 1, 0, -5deg ) translate3d( 0, 0, 100px ); }
+  to {   transform: perspective( 800px ) rotate3d( 0, 1, 0, 5deg ) translate3d( 0, 0, 100px );  }
+}
+@keyframes anim3 {
+  from { transform: perspective( 800px ) rotate3d( 0, 1, 0, -5deg ) translate3d( 0, 0, 150px ); }
+  to {   transform: perspective( 800px ) rotate3d( 0, 1, 0, 5deg ) translate3d( 0, 0, 150px );  }
+}
+@keyframes anim4 {
+  from { transform: perspective( 800px ) rotate3d( 0, 1, 0, -5deg ) translate3d( 0, 0, 200px ); }
+  to {   transform: perspective( 800px ) rotate3d( 0, 1, 0, 5deg ) translate3d( 0, 0, 200px );  }
+}
+
+#rect {
+    background-image: url('../img/bg.jpg');
+    margin: -20px;
+    background-size: 100%;
+    border-style: solid;
+    border-color: red;
+    border-size: 1px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.level0, .level1, .level2, .level3, .level4 {
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.level0 { animation-name: anim0; }
+.level1 { animation-name: anim1; }
+.level2 { animation-name: anim2; }
+.level3 { animation-name: anim3; }
+.level4 { animation-name: anim4; }
+
+.green-rect {
+    background-color: #ccc;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+#stage {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+    display: inline-block;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
